@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -102,12 +102,6 @@
 		5450B0141E63EA4300568494 /* ijklongurl.c in Sources */ = {isa = PBXBuildFile; fileRef = 54A029B31D4700E6001C61C1 /* ijklongurl.c */; };
 		5450B0151E63EA4300568494 /* renderer_rgb.c in Sources */ = {isa = PBXBuildFile; fileRef = E6C459BE1C708CAF004831EC /* renderer_rgb.c */; };
 		5450B0161E63EA4300568494 /* ffpipeline_ffplay.c in Sources */ = {isa = PBXBuildFile; fileRef = E67B91B21A3801E600717EA9 /* ffpipeline_ffplay.c */; };
-		5450B0181E63EA4300568494 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E653C6EF1BCE5A750016835A /* libavcodec.a */; };
-		5450B0191E63EA4300568494 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E653C6F01BCE5A750016835A /* libavfilter.a */; };
-		5450B01A1E63EA4300568494 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E653C6F11BCE5A750016835A /* libavformat.a */; };
-		5450B01B1E63EA4300568494 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E653C6F21BCE5A750016835A /* libavutil.a */; };
-		5450B01C1E63EA4300568494 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E653C6F31BCE5A750016835A /* libswresample.a */; };
-		5450B01D1E63EA4300568494 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E653C6F41BCE5A750016835A /* libswscale.a */; };
 		5450B01F1E63EA4300568494 /* IJKFFMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = E6DBD3871C8941EB0058E4FB /* IJKFFMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5450B0201E63EA4300568494 /* ijkiourl.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CF8A321E1526F800309DD5 /* ijkiourl.h */; };
 		5450B0211E63EA4300568494 /* IJKFFMoviePlayerController.h in Headers */ = {isa = PBXBuildFile; fileRef = E66F8DE517EFD9C300354D80 /* IJKFFMoviePlayerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -139,8 +133,6 @@
 		5450B03C1E63EA4300568494 /* IJKSDLHudViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E68B7ACD1C1E97B0001DE241 /* IJKSDLHudViewCell.h */; };
 		5450B03D1E63EA4300568494 /* IJKVideoToolBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 5407EC271DF7F93B00457BFE /* IJKVideoToolBox.h */; };
 		5450B03E1E63EA4300568494 /* NSString+IJKMedia.h in Headers */ = {isa = PBXBuildFile; fileRef = E69808991C7EB13A0048A46C /* NSString+IJKMedia.h */; };
-		5450B0451E63EAB700568494 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5450AF8B1E63E59300568494 /* libcrypto.a */; };
-		5450B0461E63EAB700568494 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5450AF8C1E63E59300568494 /* libssl.a */; };
 		5450B0471E63EABC00568494 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5450AF8F1E63E59800568494 /* libz.tbd */; };
 		549385C41E640456001AE08D /* IJKMediaFrameworkWithSSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 5450AF9B1E63E65700568494 /* IJKMediaFrameworkWithSSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54A029B61D4700E6001C61C1 /* ijkasync.c in Sources */ = {isa = PBXBuildFile; fileRef = 54A029B11D4700E6001C61C1 /* ijkasync.c */; };
@@ -170,17 +162,39 @@
 		54CF8A521E15287D00309DD5 /* ijktree.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CF8A461E15287D00309DD5 /* ijktree.h */; };
 		54CF8A531E15287D00309DD5 /* ijkutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 54CF8A471E15287D00309DD5 /* ijkutils.c */; };
 		54CF8A541E15287D00309DD5 /* ijkutils.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CF8A481E15287D00309DD5 /* ijkutils.h */; };
+		6697DE1F2A5D400F00C42647 /* libavcodec.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE142A5D3FF500C42647 /* libavcodec.xcframework */; };
+		6697DE202A5D400F00C42647 /* libavcodec.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE142A5D3FF500C42647 /* libavcodec.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6697DE212A5D400F00C42647 /* libavfilter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE132A5D3FF500C42647 /* libavfilter.xcframework */; };
+		6697DE222A5D400F00C42647 /* libavfilter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE132A5D3FF500C42647 /* libavfilter.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6697DE232A5D400F00C42647 /* libavformat.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE0F2A5D3FF500C42647 /* libavformat.xcframework */; };
+		6697DE242A5D400F00C42647 /* libavformat.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE0F2A5D3FF500C42647 /* libavformat.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6697DE252A5D400F00C42647 /* libavutil.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE152A5D3FF500C42647 /* libavutil.xcframework */; };
+		6697DE262A5D400F00C42647 /* libavutil.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE152A5D3FF500C42647 /* libavutil.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6697DE272A5D400F00C42647 /* libcrypto.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE122A5D3FF500C42647 /* libcrypto.xcframework */; };
+		6697DE282A5D400F00C42647 /* libcrypto.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE122A5D3FF500C42647 /* libcrypto.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6697DE292A5D400F00C42647 /* libssl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE162A5D3FF600C42647 /* libssl.xcframework */; };
+		6697DE2A2A5D400F00C42647 /* libssl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE162A5D3FF600C42647 /* libssl.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6697DE2B2A5D400F00C42647 /* libswresample.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE102A5D3FF500C42647 /* libswresample.xcframework */; };
+		6697DE2C2A5D400F00C42647 /* libswresample.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE102A5D3FF500C42647 /* libswresample.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6697DE2D2A5D400F00C42647 /* libswscale.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE112A5D3FF500C42647 /* libswscale.xcframework */; };
+		6697DE2E2A5D400F00C42647 /* libswscale.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE112A5D3FF500C42647 /* libswscale.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6697DE302A5D402A00C42647 /* libavcodec.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE142A5D3FF500C42647 /* libavcodec.xcframework */; };
+		6697DE312A5D402B00C42647 /* libavcodec.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE142A5D3FF500C42647 /* libavcodec.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6697DE332A5D402C00C42647 /* libavfilter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE132A5D3FF500C42647 /* libavfilter.xcframework */; };
+		6697DE342A5D402C00C42647 /* libavfilter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE132A5D3FF500C42647 /* libavfilter.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6697DE352A5D402D00C42647 /* libavformat.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE0F2A5D3FF500C42647 /* libavformat.xcframework */; };
+		6697DE362A5D402D00C42647 /* libavformat.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE0F2A5D3FF500C42647 /* libavformat.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6697DE372A5D402F00C42647 /* libavutil.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE152A5D3FF500C42647 /* libavutil.xcframework */; };
+		6697DE382A5D402F00C42647 /* libavutil.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE152A5D3FF500C42647 /* libavutil.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6697DE3D2A5D403300C42647 /* libswresample.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE102A5D3FF500C42647 /* libswresample.xcframework */; };
+		6697DE3E2A5D403300C42647 /* libswresample.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE102A5D3FF500C42647 /* libswresample.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6697DE3F2A5D403500C42647 /* libswscale.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE112A5D3FF500C42647 /* libswscale.xcframework */; };
+		6697DE402A5D403500C42647 /* libswscale.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6697DE112A5D3FF500C42647 /* libswscale.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B417F8DE24F7C3B500D159BB /* cJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = B417F8DB24F7C3B400D159BB /* cJSON.h */; };
 		B417F8E224F7C56C00D159BB /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = B417F8E124F7C56C00D159BB /* cJSON.c */; };
 		B4449BD6250095700074CEDC /* ijklas.h in Headers */ = {isa = PBXBuildFile; fileRef = B4449BD4250095700074CEDC /* ijklas.h */; };
 		B4449BD7250095700074CEDC /* ijklas.c in Sources */ = {isa = PBXBuildFile; fileRef = B4449BD5250095700074CEDC /* ijklas.c */; };
 		E607FFE11B7B62E3005F11A6 /* IJKDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E607FFDF1B7B60F9005F11A6 /* IJKDeviceModel.m */; };
-		E653C6F61BCE5A750016835A /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E653C6EF1BCE5A750016835A /* libavcodec.a */; };
-		E653C6F81BCE5A750016835A /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E653C6F01BCE5A750016835A /* libavfilter.a */; };
-		E653C6FA1BCE5A750016835A /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E653C6F11BCE5A750016835A /* libavformat.a */; };
-		E653C6FC1BCE5A750016835A /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E653C6F21BCE5A750016835A /* libavutil.a */; };
-		E653C6FE1BCE5A750016835A /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E653C6F31BCE5A750016835A /* libswresample.a */; };
-		E653C7001BCE5A750016835A /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E653C6F41BCE5A750016835A /* libswscale.a */; };
 		E654EA8F1B6B27E600B0F2D0 /* IJKMediaFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E654EA8E1B6B27E600B0F2D0 /* IJKMediaFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E654EA951B6B27E600B0F2D0 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E654EA8A1B6B27E600B0F2D0 /* IJKMediaFramework.framework */; };
 		E654EA9C1B6B27E600B0F2D0 /* IJKMediaFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E654EA9B1B6B27E600B0F2D0 /* IJKMediaFrameworkTests.m */; };
@@ -278,6 +292,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6697DE2F2A5D400F00C42647 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6697DE262A5D400F00C42647 /* libavutil.xcframework in Embed Frameworks */,
+				6697DE222A5D400F00C42647 /* libavfilter.xcframework in Embed Frameworks */,
+				6697DE2A2A5D400F00C42647 /* libssl.xcframework in Embed Frameworks */,
+				6697DE242A5D400F00C42647 /* libavformat.xcframework in Embed Frameworks */,
+				6697DE282A5D400F00C42647 /* libcrypto.xcframework in Embed Frameworks */,
+				6697DE202A5D400F00C42647 /* libavcodec.xcframework in Embed Frameworks */,
+				6697DE2E2A5D400F00C42647 /* libswscale.xcframework in Embed Frameworks */,
+				6697DE2C2A5D400F00C42647 /* libswresample.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6697DE322A5D402B00C42647 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6697DE382A5D402F00C42647 /* libavutil.xcframework in Embed Frameworks */,
+				6697DE342A5D402C00C42647 /* libavfilter.xcframework in Embed Frameworks */,
+				6697DE362A5D402D00C42647 /* libavformat.xcframework in Embed Frameworks */,
+				6697DE312A5D402B00C42647 /* libavcodec.xcframework in Embed Frameworks */,
+				6697DE402A5D403500C42647 /* libswscale.xcframework in Embed Frameworks */,
+				6697DE3E2A5D403300C42647 /* libswresample.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		454316201A66493700676070 /* ffpipeline_ios.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ffpipeline_ios.c; path = ijkmedia/ijkplayer/ios/pipeline/ffpipeline_ios.c; sourceTree = "<group>"; };
 		454316211A66493700676070 /* ffpipeline_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ffpipeline_ios.h; path = ijkmedia/ijkplayer/ios/pipeline/ffpipeline_ios.h; sourceTree = "<group>"; };
@@ -326,6 +377,14 @@
 		54CF8A461E15287D00309DD5 /* ijktree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijktree.h; sourceTree = "<group>"; };
 		54CF8A471E15287D00309DD5 /* ijkutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijkutils.c; sourceTree = "<group>"; };
 		54CF8A481E15287D00309DD5 /* ijkutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijkutils.h; sourceTree = "<group>"; };
+		6697DE0F2A5D3FF500C42647 /* libavformat.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libavformat.xcframework; sourceTree = "<group>"; };
+		6697DE102A5D3FF500C42647 /* libswresample.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libswresample.xcframework; sourceTree = "<group>"; };
+		6697DE112A5D3FF500C42647 /* libswscale.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libswscale.xcframework; sourceTree = "<group>"; };
+		6697DE122A5D3FF500C42647 /* libcrypto.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libcrypto.xcframework; sourceTree = "<group>"; };
+		6697DE132A5D3FF500C42647 /* libavfilter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libavfilter.xcframework; sourceTree = "<group>"; };
+		6697DE142A5D3FF500C42647 /* libavcodec.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libavcodec.xcframework; sourceTree = "<group>"; };
+		6697DE152A5D3FF500C42647 /* libavutil.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libavutil.xcframework; sourceTree = "<group>"; };
+		6697DE162A5D3FF600C42647 /* libssl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libssl.xcframework; sourceTree = "<group>"; };
 		B417F8DB24F7C3B400D159BB /* cJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cJSON.h; sourceTree = "<group>"; };
 		B417F8E124F7C56C00D159BB /* cJSON.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cJSON.c; sourceTree = "<group>"; };
 		B4449BD4250095700074CEDC /* ijklas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijklas.h; sourceTree = "<group>"; };
@@ -338,12 +397,6 @@
 		E63FC27317F013DE003551EB /* ijksdl_dummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_dummy.h; sourceTree = "<group>"; };
 		E63FC27417F013DE003551EB /* ijksdl_vout_dummy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ijksdl_vout_dummy.c; sourceTree = "<group>"; };
 		E63FC27517F013DE003551EB /* ijksdl_vout_dummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ijksdl_vout_dummy.h; sourceTree = "<group>"; };
-		E653C6EF1BCE5A750016835A /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
-		E653C6F01BCE5A750016835A /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavfilter.a; sourceTree = "<group>"; };
-		E653C6F11BCE5A750016835A /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavformat.a; sourceTree = "<group>"; };
-		E653C6F21BCE5A750016835A /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
-		E653C6F31BCE5A750016835A /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
-		E653C6F41BCE5A750016835A /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
 		E654EA8A1B6B27E600B0F2D0 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IJKMediaFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E654EA8D1B6B27E600B0F2D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E654EA8E1B6B27E600B0F2D0 /* IJKMediaFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IJKMediaFramework.h; sourceTree = "<group>"; };
@@ -483,15 +536,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6697DE212A5D400F00C42647 /* libavfilter.xcframework in Frameworks */,
+				6697DE292A5D400F00C42647 /* libssl.xcframework in Frameworks */,
+				6697DE2B2A5D400F00C42647 /* libswresample.xcframework in Frameworks */,
+				6697DE232A5D400F00C42647 /* libavformat.xcframework in Frameworks */,
+				6697DE272A5D400F00C42647 /* libcrypto.xcframework in Frameworks */,
 				5450B0471E63EABC00568494 /* libz.tbd in Frameworks */,
-				5450B0451E63EAB700568494 /* libcrypto.a in Frameworks */,
-				5450B0461E63EAB700568494 /* libssl.a in Frameworks */,
-				5450B0181E63EA4300568494 /* libavcodec.a in Frameworks */,
-				5450B0191E63EA4300568494 /* libavfilter.a in Frameworks */,
-				5450B01A1E63EA4300568494 /* libavformat.a in Frameworks */,
-				5450B01B1E63EA4300568494 /* libavutil.a in Frameworks */,
-				5450B01C1E63EA4300568494 /* libswresample.a in Frameworks */,
-				5450B01D1E63EA4300568494 /* libswscale.a in Frameworks */,
+				6697DE1F2A5D400F00C42647 /* libavcodec.xcframework in Frameworks */,
+				6697DE2D2A5D400F00C42647 /* libswscale.xcframework in Frameworks */,
+				6697DE252A5D400F00C42647 /* libavutil.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,12 +552,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E653C6F61BCE5A750016835A /* libavcodec.a in Frameworks */,
-				E653C6F81BCE5A750016835A /* libavfilter.a in Frameworks */,
-				E653C6FA1BCE5A750016835A /* libavformat.a in Frameworks */,
-				E653C6FC1BCE5A750016835A /* libavutil.a in Frameworks */,
-				E653C6FE1BCE5A750016835A /* libswresample.a in Frameworks */,
-				E653C7001BCE5A750016835A /* libswscale.a in Frameworks */,
+				6697DE372A5D402F00C42647 /* libavutil.xcframework in Frameworks */,
+				6697DE302A5D402A00C42647 /* libavcodec.xcframework in Frameworks */,
+				6697DE3D2A5D403300C42647 /* libswresample.xcframework in Frameworks */,
+				6697DE332A5D402C00C42647 /* libavfilter.xcframework in Frameworks */,
+				6697DE3F2A5D403500C42647 /* libswscale.xcframework in Frameworks */,
+				6697DE352A5D402D00C42647 /* libavformat.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,12 +768,14 @@
 		E6903FC117EAFC2C00CFD954 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				E653C6EF1BCE5A750016835A /* libavcodec.a */,
-				E653C6F01BCE5A750016835A /* libavfilter.a */,
-				E653C6F11BCE5A750016835A /* libavformat.a */,
-				E653C6F21BCE5A750016835A /* libavutil.a */,
-				E653C6F31BCE5A750016835A /* libswresample.a */,
-				E653C6F41BCE5A750016835A /* libswscale.a */,
+				6697DE142A5D3FF500C42647 /* libavcodec.xcframework */,
+				6697DE132A5D3FF500C42647 /* libavfilter.xcframework */,
+				6697DE0F2A5D3FF500C42647 /* libavformat.xcframework */,
+				6697DE152A5D3FF500C42647 /* libavutil.xcframework */,
+				6697DE122A5D3FF500C42647 /* libcrypto.xcframework */,
+				6697DE162A5D3FF600C42647 /* libssl.xcframework */,
+				6697DE102A5D3FF500C42647 /* libswresample.xcframework */,
+				6697DE112A5D3FF500C42647 /* libswscale.xcframework */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -1066,6 +1121,7 @@
 				5450B0171E63EA4300568494 /* Frameworks */,
 				5450B01E1E63EA4300568494 /* Headers */,
 				5450B03F1E63EA4300568494 /* Resources */,
+				6697DE2F2A5D400F00C42647 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1085,6 +1141,7 @@
 				E654EA861B6B27E600B0F2D0 /* Frameworks */,
 				E654EA871B6B27E600B0F2D0 /* Headers */,
 				E654EA881B6B27E600B0F2D0 /* Resources */,
+				6697DE322A5D402B00C42647 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1446,7 +1503,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/IJKMediaFrameworkWithSSL.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../build/universal/lib\"",
@@ -1497,7 +1558,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/IJKMediaFrameworkWithSSL.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../build/universal/lib\"",
@@ -1551,7 +1616,11 @@
 				INFOPLIST_FILE = IJKMediaFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../build/universal/lib\"",
@@ -1597,7 +1666,11 @@
 				INFOPLIST_FILE = IJKMediaFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../build/universal/lib\"",
@@ -1639,7 +1712,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = IJKMediaFrameworkTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "tv.danmaku.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1669,7 +1746,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = IJKMediaFrameworkTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "tv.danmaku.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
